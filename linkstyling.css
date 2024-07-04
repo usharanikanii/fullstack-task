@@ -1,0 +1,88 @@
+body{
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;  
+}                                              
+span{
+    font-family: "Spicy Rice", serif;
+    font-size: xx-large;
+    color: #8c18af;
+}
+li{
+    list-style-type: none;
+    padding: 0px 10px;
+    transition-duration: .3s;
+}
+a{
+    text-decoration-line: none;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "Spicy Rice", serif;
+    color:rgb(15, 12, 12);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    background-color: #FF76CE;
+    padding: 5px 20px;
+    border-radius: 150px;
+}
+ul{
+    display: flex;
+    margin: 4px;
+}
+i{
+    font-size: xx-large;
+    color: #5b0c75;
+    position: absolute;
+    top: 50px;
+    left: -5px;
+    animation-name: bean;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes bean{
+    from{
+        
+    }
+    to{
+        transform:
+        translateX(100vw);
+    }
+}
+li:hover{
+    border-bottom: 2px solid var(--text-color);
+    box-shadow: 10px 10px 30px rgb(240, 186, 195);
+    text-shadow: 5px 5px 2px pink;
+}
+li:active{
+    background-color: #eb2aa7;
+}
+:target{
+    background-color: rgb(11, 116, 158);
+    color: var(--text-color);
+    padding: 0px 10px;
+    transition-duration: 1s;
+}
+img{
+    height: 300px;
+    width: 450px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 20px;
+    margin: 10px;
+}
+.menu{
+    font-family: "Spicy Rice", serif;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+:root{
+    --text-color:#c93294;
+    --heading-font-size:3cm;
+}
